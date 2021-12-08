@@ -13,6 +13,16 @@ $font_head: "Arial", sans-serif
 $font_link_h: "Arial", cursive
 $font_text: "Helvetica, Arial", sans-serif
 
+@mixin keyframes($move)
+  @-webkit-keyframes #{$move}
+    @content
+  @-moz-keyframes #{$move}
+    @content
+  @-ms-keyframes #{$move}
+    @content
+  @keyframes #{$move}
+    @content
+
 *
   margin: 0
   padding: 0
@@ -194,6 +204,11 @@ slides
   -moz-animation: move 1s ease-in-out 0.5s 2 alternate
   -webkit-animation: move 1s ease-in-out 0.5s 2 alternate
 
+@include keyframes(move)
+  0%
+    transform: translateX(0px)
+  100%
+    transform: translateX(100%)
 
 //@keyframes move
 //from
