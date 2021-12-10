@@ -192,10 +192,7 @@ slides {
   z-index: -1;
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
-  -webkit-transition: transform ease-in-out 0.5s, opacity ease-in-out 0.5s;
   -webkit-transition: opacity ease-in-out 0.5s, -webkit-transform ease-in-out 0.5s;
-  transition: opacity ease-in-out 0.5s, -webkit-transform ease-in-out 0.5s;
-  transition: transform ease-in-out 0.5s, opacity ease-in-out 0.5s;
   transition: transform ease-in-out 0.5s, opacity ease-in-out 0.5s, -webkit-transform ease-in-out 0.5s;
 }
 
